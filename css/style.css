@@ -649,27 +649,17 @@ ul.menu-col li a:hover, ul.menu-col li a:focus {
 	overflow: hidden;
 	z-index: 1;
 	border-radius: 5px;
+
 	color: #000000;
 }
 .button.two a {
 	padding: 14px 35px;
-<<<<<<< HEAD
 	background:#fff;	
 	color: #006106;
-=======
-	background:#fff;
-	
-	color: #006106;
-
->>>>>>> 723ecb8b535f4573b0e7e2855171b48d7d9fb455
 }
 .button.three a {
 	background:#fff;
 	padding: 14px 35px;
-<<<<<<< HEAD
-=======
-	color: #006106;
->>>>>>> 723ecb8b535f4573b0e7e2855171b48d7d9fb455
 }
 .button .active {
 	background: #006106;
@@ -677,6 +667,24 @@ ul.menu-col li a:hover, ul.menu-col li a:focus {
 }
 .button .active:before {
 	background: #57c241;
+
+	color: #fff;
+}
+.button.two a {
+	padding: 14px 35px;
+}
+.button.three a {
+	background: #fff;
+	padding: 14px 35px;
+	color: #2d2e2e;
+}
+.button .active {
+	background: #034a6a;
+	margin-left: 25px;
+}
+.button .active:before {
+	background: #002739;
+
 }
 .button a i {
 	margin-left: 5px;
@@ -695,10 +703,9 @@ ul.menu-col li a:hover, ul.menu-col li a:focus {
 }
 .button a:hover {
 	color: #fff;
-<<<<<<< HEAD
+
 	
-=======
->>>>>>> 723ecb8b535f4573b0e7e2855171b48d7d9fb455
+
 }
 .button a:hover:before {
 	width: 180%;
