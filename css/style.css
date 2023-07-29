@@ -649,7 +649,6 @@ ul.menu-col li a:hover, ul.menu-col li a:focus {
 	overflow: hidden;
 	z-index: 1;
 	border-radius: 5px;
-
 	color: #000000;
 }
 .button.two a {
@@ -667,24 +666,6 @@ ul.menu-col li a:hover, ul.menu-col li a:focus {
 }
 .button .active:before {
 	background: #57c241;
-
-	color: #fff;
-}
-.button.two a {
-	padding: 14px 35px;
-}
-.button.three a {
-	background: #fff;
-	padding: 14px 35px;
-	color: #2d2e2e;
-}
-.button .active {
-	background: #034a6a;
-	margin-left: 25px;
-}
-.button .active:before {
-	background: #002739;
-
 }
 .button a i {
 	margin-left: 5px;
@@ -703,9 +684,7 @@ ul.menu-col li a:hover, ul.menu-col li a:focus {
 }
 .button a:hover {
 	color: #fff;
-
 	
-
 }
 .button a:hover:before {
 	width: 180%;
