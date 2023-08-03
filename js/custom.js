@@ -268,3 +268,25 @@ jQuery(window).on("load scroll", function() {
         });
 	  
 });
+// JavaScript to handle category click events and display corresponding details
+document.addEventListener("DOMContentLoaded", function() {
+    const categoryRows = document.querySelectorAll(".category-row");
+  
+    function showDetails(category) {
+      const categoryName = category.dataset.category;
+      const detailsRows = document.querySelectorAll(".category-row");
+      detailsRows.forEach(row => {
+        if (row.dataset.category === categoryName) {
+          row.style.display = "table-row";
+        } else {
+          row.style.display = "none";
+        }
+      });
+    }
+  
+    categoryRows.forEach(row => {
+      row.addEventListener("click", function() {
+        showDetails(this);
+      });
+    });
+  });

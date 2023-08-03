@@ -2960,6 +2960,49 @@ body {
 .sb-accordions .acc-item:last-child {
 	margin-bottom: 0;
 }
+/* Add your existing CSS styles here */
+
+.categories-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+  }
+  
+  .category-item {
+	flex-basis: calc(33.33% - 20px); /* Adjust this value as needed to fit your layout */
+	border: 1px solid #ccc;
+	padding: 20px;
+	text-align: left;
+  }
+  
+  .category-content {
+	margin-bottom: 10px;
+  }
+  
+  .buttons {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin-top: 10px;
+  }
+  
+  .view-btn, .download-btn {
+	display: inline-block;
+	padding: 8px 16px;
+	background-color: #007bff;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 4px;
+	margin-left: 10px;
+  }
+  
+  .download-btn {
+	background-color: #28a745;
+  }
+  
+  /* Adjust button styles as needed */
+  
+
 /*
 ================================================
 18. Error Sec
@@ -3694,7 +3737,200 @@ nav.main-menu ul.menu li ul.mega-submenu li.active > a,  nav.main-menu ul.menu l
     text-decoration: none;
     cursor: pointer;
 }
+  
+/* Nokin */
 
+  /* Add your existing CSS styles here */
 
+.download-categories-sec {
+	padding: 50px 0;
+  }
+  
+  .category-card {
+	background-color: #f2f2f2;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	padding: 20px;
+	width: 300px;
+  }
+  
+  .category-title {
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 10px;
+  }
+  
+  .main-categories {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+  }
+  
+  .main-categories li {
+	margin-top: 10px;
+	position: relative; /* Add relative positioning to the main categories li */
+  }
+  
+  .main-categories li a {
+	text-decoration: none;
+	color: #007bff;
+	font-weight: bold;
+	display: block;
+  }
+  
+  /* .sub-categories {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 100%;
+	z-index: 1;
+	width: 300px;
+	background-color: #f2f2f2;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	padding: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+   */
+   /* ... your existing CSS styles ... */
+
+/* Add new styles for the sub-categories table format */
+.sub-categories {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 100%;
+	right: 0; /* Set right to 0 to make it cover the remaining space */
+	z-index: 1;
+	background-color: #f2f2f2;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	padding: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	  width: calc(100vw - 300px); /* Set the width to cover the remaining space */
+  }
+  
+  .sub-categories table {
+	width: 100%;
+	border-collapse: collapse;
+  }
+  
+  .sub-categories td {
+	padding: 5px;
+	border-bottom: 1px solid #ccc;
+	white-space: nowrap; /* Prevent text wrapping */
+  }
+  
+  .sub-categories td:last-child {
+	text-align: right;
+  }
+  
+  /* ... your existing button styles ... */
+  
+  .sub-categories li {
+	margin-top: 10px;
+  }
+  
+  .sub-categories li p {
+	margin: 0;
+  }
+  
+  .sub-categories li .buttons {
+	display: flex;
+	justify-content: space-between;
+  }
+  
+  .view-btn,
+  .download-btn {
+	display: inline-block;
+	padding: 8px 16px;
+	background-color: #d4c0c7;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 4px;
+  }
+  
+  .download-btn {
+	background-color: #d4c0c7;
+  }
+  
+  /* Adjust button styles as needed */
+  .main-categories li:hover .sub-categories {
+	display: block;
+  }
+
+/* nokin for table code here */
+
+/* Your existing CSS styles */
+
+/* Additional styles for the dynamic table */
+.categories-table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 30px;
+  }
+  
+  .categories-table th, .categories-table td {
+	padding: 10px;
+	border: 1px solid #ccc;
+  }
+  
+  .categories-table th {
+	text-align: left;
+  }
+  
+  .categories-table .sub-categories {
+	display: none;
+  }
+  
+  .categories-table .buttons a {
+	margin-right: 5px;
+  }
+  /* Your existing CSS styles */
+
+/* Additional styles for the dynamic table */
+.categories-table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 30px;
+  }
+  
+  .categories-table th, .categories-table td {
+	padding: 10px;
+	border: 1px solid #ccc;
+  }
+  
+  .categories-table th {
+	text-align: left;
+  }
+  
+  .categories-table .details, .categories-table .view, .categories-table .download {
+	display: none;
+  }
+  /* Your existing CSS styles */
+
+/* Additional styles for the dynamic table */
+.categories-table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 30px;
+  }
+  
+  .categories-table th, .categories-table td {
+	padding: 10px;
+	border: 1px solid #ccc;
+	text-align: center;
+  }
+  
+  .categories-table th {
+	text-align: center;
+  }
+  
+  .category-row:hover {
+	background-color: #f2f2f2;
+	cursor: pointer;
+  }
+  
+  
   
 
