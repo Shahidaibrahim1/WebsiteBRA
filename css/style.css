@@ -245,7 +245,7 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
 	font-size: 19px;
 	color: #fff;
 	font-weight: 500;
-	background: #86bc42;
+	background: #0073B0;
 	border: none;
 }
 .btn:before {
@@ -2728,7 +2728,8 @@ body {
 	background-repeat: no-repeat;
 	position: relative;
 	padding: 70px 0;
-	background-image: url(http://via.placeholder.com/2000x1333/000/fff);
+	background-image: url(../images/taxes.jpg);
+
 	z-index: -1;
 	float: left;
 	width: 100%;
@@ -3738,7 +3739,7 @@ nav.main-menu ul.menu li ul.mega-submenu li.active > a,  nav.main-menu ul.menu l
     cursor: pointer;
 }
   
-/* Nokin */
+/* Nokin list wala */
 
   /* Add your existing CSS styles here */
 
@@ -3932,5 +3933,94 @@ nav.main-menu ul.menu li ul.mega-submenu li.active > a,  nav.main-menu ul.menu l
   }
   
   
+  /* Custom styling for the table */
+  #content-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  #content-table th,
+  #content-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+  }
+
+  #content-table th {
+    background-color: #f2f2f2;
+  }
+
+  #content-table tr:hover {
+    background-color: #f9f9f9;
+  }
+
+  #content-table a {
+    color: #007bff;
+    text-decoration: none;
+  }
+
+  #content-table a:hover {
+    text-decoration: underline;
+  }
+ /* for final table */
+/* Custom CSS for the category list */
+#category-list {
+	list-style: none;
+	padding: 0;
+	margin: 30px;
+	/* margin-left: 110px; */
+  }
+  
+  #category-list li {
+	cursor: pointer;
+	background-color: #0073B0; /* Default background color */
+	padding: 10px;
+	border-bottom: 1px solid #ccc;
+	color: white;
+  }
+  
+  #category-list li:hover {
+	background-color: #242c42; /* Change this to your desired hover color */
+  }
+  .col-md-4 {
+	padding: 0; /* Remove the bottom margin of the col-md-4 element */
+  }
+
+  /* Custom CSS for the table */
+  table{
+	width: 100%;
+  border-collapse: collapse;
+  }
+  #category-table {
+	border: 2px solid #ccc;
+	width: 100%;
+	margin: 30px;
+	/* margin-right: 0; */
+  }
+
+  #category-table th {
+	background-color: #0073B0; /* Color for table header cells */
+	border: 1px solid #ccc;
+	padding: 8px;
+	color: white;
+	
+  }
+
+  #category-table td {
+	background-color: #f2f2f2; /* Color for table data cells and entire rows */
+	border: 1px solid #ccc;
+	padding: 8px;
+  }
+
+  #category-table tbody tr:hover {
+	background-color: lightblue; /* Change this to your desired row hover color if needed */
+  }
+  #category-table .custom-button.btn-primary,
+#category-table .custom-button.btn-success {
+  background-color: #f5f5f5; /* Shade of white (adjust as needed) */
+}
+
   
 

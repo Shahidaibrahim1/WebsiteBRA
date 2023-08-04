@@ -269,24 +269,57 @@ jQuery(window).on("load scroll", function() {
 	  
 });
 // JavaScript to handle category click events and display corresponding details
-document.addEventListener("DOMContentLoaded", function() {
-    const categoryRows = document.querySelectorAll(".category-row");
+// document.addEventListener("DOMContentLoaded", function() {
+//     const categoryRows = document.querySelectorAll(".category-row");
   
-    function showDetails(category) {
-      const categoryName = category.dataset.category;
-      const detailsRows = document.querySelectorAll(".category-row");
-      detailsRows.forEach(row => {
-        if (row.dataset.category === categoryName) {
-          row.style.display = "table-row";
-        } else {
-          row.style.display = "none";
-        }
-      });
-    }
+//     function showDetails(category) {
+//       const categoryName = category.dataset.category;
+//       const detailsRows = document.querySelectorAll(".category-row");
+//       detailsRows.forEach(row => {
+//         if (row.dataset.category === categoryName) {
+//           row.style.display = "table-row";
+//         } else {
+//           row.style.display = "none";
+//         }
+//       });
+//     }
   
-    categoryRows.forEach(row => {
-      row.addEventListener("click", function() {
-        showDetails(this);
-      });
+//     categoryRows.forEach(row => {
+//       row.addEventListener("click", function() {
+//         showDetails(this);
+//       });
+//     });
+//   });
+$(document).ready(function() {
+    
+    displayContentForCategory('acts'); // Display contents for the default category
+
+    $('.nav-link').click(function(e) {
+      e.preventDefault();
+      const category = $(this).data('category');
+      $('#selected-category').text(`Category: ${category}`);
+      displayContentForCategory(category);
     });
+
+    function displayContentForCategory(category) {
+      $('#content-table').empty();
+      // Replace this part with your actual table contents
+      const tableContent = `
+        <table>
+          <tr>
+            <th>Details</th>
+            <th>View</th>
+            <th>Downloads</th>
+            <!-- Add more table headers as needed -->
+          </tr>
+          <tr>
+            <td>Data 1</td>
+            <td>Data 2</td>
+            <!-- Add more table data rows as needed -->
+          </tr>
+        </table>
+      `;
+      $('#content-table').append(tableContent);
+    }
+
   });
