@@ -63,7 +63,7 @@ a {
 	transition: all 0.3s ease 0s;
 }
 a:hover {
-	color: #fff;
+	color: #2d2e2e;
 	text-decoration: none;
 }
 a, a:hover, a:active, a:focus {
@@ -385,6 +385,7 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
 /** Main Navigation **/
 nav.main-menu .mega-menu-item.megamenu-fw {
 	position: static;
+	margin: 0;
 }
 nav.main-menu .megamenu-fw .mega-submenu {
 	left: auto;
@@ -469,12 +470,12 @@ nav.main-menu ul.menu li ul.mega-submenu li a {
 	font-family: 'Muli', sans-serif;
 }
 /* this i have done */
-nav.main-menu li:hover > a, nar > a {
+/* nav.main-menu li:hover > a, nar > a {
 	background: #034a6a;
 	
 	
 
-}
+} */
 nav.main-menu ul.menu li ul.mega-submenu li:hover > a, nav.main-menu ul.menu li ul.mega-submenu li:hover > a, nav.main-menu ul.menu li ul.mega-submenu li:hover > a, nav.main-menu ul.menu li ul.mega-submenu li:hover > a {
 	background: #034a6a;
 	color: #fff !important;
@@ -592,22 +593,43 @@ ul.menu-col li a:hover, ul.menu-col li a:focus {
 	width: 100%;
 	overflow-x: hidden;
 }
+  .slider_area {
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 700px;
+	margin-left: 20px;
+	margin-right: 20px;
+  }
 .slider1 {
 	/* background-image: url(http://via.placeholder.com/2000x1333/000/fff); */
-	background-image: url(/images/bg.jpeg);
-
+	background-image: url(/images/slider1.png);
 	background-size: cover;
-	background-position: center center;
 	background-repeat: no-repeat;
-	height: 900px;
+	margin-left: 20px;
+	margin-right: 20px;
 }
 .slider2 {
-	background-image: url(/images/bg.jpeg);
+	background-image: url(/images/slider2.png);
 	background-size: cover;
-	background-position: center center;
 	background-repeat: no-repeat;
-	height: 900px;
+	margin-left: 20px;
+	margin-right: 20px;
 }
+/* .slider3 {
+	background-image: url(/images/b6.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.slider4 {
+	background-image: url(/images/b9.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-left: 20px;
+	margin-right: 20px;
+} */
 .slider_text_inner {
 	display: inline-block;
 }
@@ -1293,6 +1315,7 @@ ul.menu-col li a:hover, ul.menu-col li a:focus {
 .signle-service-content p {
 	margin-bottom: 0;
 }
+
 /** Services Details Sec **/
 .project-details-form {
 	box-shadow: 0 0 8px 2px rgba(0,0,0,0.1);
@@ -4033,5 +4056,295 @@ nav.main-menu ul.menu li ul.mega-submenu li.active > a,  nav.main-menu ul.menu l
   background-color: #f5f5f5; /* Shade of white (adjust as needed) */
 }
 
+/* TITRE */
+h4 {
+	margin-top: 0;
+	font-size: 3rem;
+	display: inline-block;
+	float: right;
+	border-bottom: 3px solid #00325a; 
+  }
+  h1 div {
+	position: relative;
+	float: left;
+  }
+  h1 div:first-child {
+	color: #3498db;
+	margin-right: 1rem;
+  }
+  /* PROFIL */
+  .blog .carousel-indicators {
+	  left: 0;
+	  top: auto;
+	  bottom: -40px;
   
+  }
+  
+  /* The colour of the indicators */
+   /* .blog .carousel-indicators li {
+	  display: none;
+	  
+  }
+  
+  .blog .carousel-indicators .active {
+  background: #707070;
+  margin-bottom:10px;
+  }  */
+  .blog .carousel-indicators li {
+    background: none; /* Remove the background color */
+    border: 2px solid #a3a3a3; /* Add a border instead */
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    margin-bottom: 10px;
+}
 
+.blog .carousel-indicators .active {
+    background: none; /* Remove the background color */
+    border: 2px solid #707070; /* Add a border instead */
+    margin-bottom: 10px;
+}
+
+  .carousel-control-prev-icon,
+.carousel-control-next-icon {
+  color: #2f2f2f;
+  font-size: 24px;
+}
+
+.carousel-control-prev-icon {
+  left: -30px;
+}
+
+.carousel-control-next-icon {
+  right: -30px;
+}
+  
+  .our-team-section {
+	position: relative;
+	padding-top: 40px;
+	padding-bottom: 40px;
+  }
+  .our-team-section:before {
+	position: absolute;
+	top: -0;
+	left: 0;
+	content: " ";
+	background: url(img/service-section-bottom.png);
+	background-size: 100% 100px;
+	width: 100%;
+	height: 100px;
+	float: left;
+	z-index: 99;
+  }
+  .our-team {
+	padding: 0 0 40px;
+	background: #f9f9f9;
+	text-align: center;
+	overflow: hidden;
+	position: relative;
+	border-bottom: 5px solid #00325a;
+	min-height: 350px;
+	max-height: 350px;
+  }
+  .our-team:hover {
+	border-bottom: 5px solid #2f2f2f;
+  }
+  
+  .our-team .pic {
+	display: inline-block;
+	width: 130px;
+	height: 130px;
+	margin-bottom: 50px;
+	z-index: 1;
+	position: relative;
+  }
+  .our-team .pic:before {
+	content: "";
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background: #00325a;
+	position: absolute;
+	bottom: 135%;
+	right: 0;
+	left: 0;
+	opacity: 1;
+	transform: scale(3);
+	transition: all 0.3s linear 0s;
+  }
+  .our-team:hover .pic:before {
+	height: 100%;
+	background: #2f2f2f;
+  }
+  .our-team .pic:after {
+	content: "";
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background: #ffffff00;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	transition: all 0.3s linear 0s;
+  }
+  .our-team:hover .pic:after {
+	background: #145889;
+  }
+  .our-team .pic img {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	transform: scale(1);
+	transition: all 0.9s ease 0s;
+	box-shadow: 0 0 0 14px #f7f5ec;
+	transform: scale(0.7);
+	position: relative;
+	z-index: 2;
+  }
+  .our-team:hover .pic img {
+	box-shadow: 0 0 0 14px #f7f5ec;
+	transform: scale(0.7);
+  }
+  .our-team .team-content {
+	margin-bottom: 30px;
+  }
+  .our-team .title {
+	font-size: 22px;
+	font-weight: 600;
+	color: #4e5052;
+	letter-spacing: 1px;
+	text-transform: capitalize;
+	margin-bottom: 5px;
+	/* white-space: nowrap; */
+	/* overflow: hidden; */
+	/* text-overflow: ellipsis; */
+  }
+  .our-team .post {
+	display: block;
+	font-size: 15px;
+	color: #4e5052;
+	text-transform: capitalize;
+  }
+  .our-team .social {
+	width: 100%;
+	padding-top: 10px;
+	margin: 0;
+	background: #2f2f2f;
+	position: absolute;
+	bottom: -100px;
+	left: 0;
+	transition: all 0.5s ease 0s;
+  }
+  .our-team:hover .social {
+	bottom: 0;
+  }
+  .our-team .social li {
+	display: inline-block;
+  }
+  .our-team .social li a {
+	display: block;
+	padding-top: 6px;
+	font-size: 15px;
+	color: #fff;
+	transition: all 0.3s ease 0s;
+  }
+  .our-team .social li a:hover {
+	color: #145889;
+	background: #f7f5ec;
+  }
+  @media only screen and (max-width: 990px) {
+	.our-team {
+	  margin-bottom: 10px;
+	}
+  }
+
+
+ /* jquery databse wala a css eda shoru n */
+  /* .latest-news {
+	margin-top: 20px;
+  }
+  
+  .latest-news h3 {
+	font-size: 24px;
+	color: #00325a;
+	margin-bottom: 10px;
+  }
+  
+  .news-article {
+	margin-bottom: 20px;
+  }
+  
+  .news-article h4 {
+	font-size: 20px;
+	color: #2f2f2f;
+
+	margin-bottom: 5px;
+  }
+  
+  .news-date {
+	font-size: 14px;
+	color: #707070;
+	margin-bottom: 5px;
+  }
+  
+  .news-article p {
+	color: #4e5052;
+  }
+  
+  .news-article a {
+	color: #145889;
+	text-decoration: none;
+  }
+  eda thak ktm n pda
+   */
+/* Adjust the top margin to create space between navigation and breaking news */
+/* Adjust the top margin to create space between navigation and breaking news */
+.breaking-news {
+    margin-top: 0; /* Adjust this value as needed */
+
+	
+}
+
+.breaking-news-inner {
+    display: flex;
+    align-items: center;
+	justify-content: space-between; /* Aligns news label to the right */
+
+}
+
+.news-label {
+    flex: 0 0 160px;
+    padding: 5px 10px;
+    text-align: center;
+	
+}
+
+.news-label span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.news-scroll {
+    flex-grow: 1;
+    overflow: hidden;
+	padding: 5px 10px ;
+}
+.dot {
+	border-radius: 50%;
+	background-color: #00325a;
+	display: inline-block;
+}
+.flashing-label {
+    animation: flash 1s infinite;
+}
+@keyframes flash {
+    0%, 50%, 100% {
+        opacity: 0;
+    }
+    25%, 75% {
+        opacity: 1;
+    }
+}
+
+/* Your existing CSS for news-scroll and dot */
